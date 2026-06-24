@@ -74,7 +74,7 @@ export async function scrapeAndStore(): Promise<number> {
       deadline: listing.deadline ? new Date(listing.deadline).toISOString() : null,
       sponsor_name: listing.sponsor?.name,
       sponsor_logo: listing.sponsor?.logo,
-      url: `https://earn.superteam.fun/listings/${listing.slug}/`,
+      url: `https://earn.superteam.fun/listing/${listing.slug}/`,
       is_active: listing.isActive ?? true,
       scraped_at: new Date().toISOString()
     }
