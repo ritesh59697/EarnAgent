@@ -1,5 +1,6 @@
 import cron from 'node-cron'
 import 'dotenv/config'
+import http from 'http'
 import { scrapeAndStore } from './scraper/index.js'
 import { runMatchingForNewListings } from './agent/index.js'
 import { bot, notifyUser } from './bot/index.js'
@@ -62,3 +63,12 @@ runPipeline()
 // Then run on schedule (every N minutes)
 cron.schedule(`*/${INTERVAL} * * * *`, runPipeline)
 console.log(`[cron] Pipeline scheduled every ${INTERVAL} minutes`)
+
+// Start a simple HTTP health check server (required by Render/Koyeb/etc.)
+const port = process.env.PORT || '3001'
+http.createServer((req, res) => {
+  res.writeHead(200, { 'Content-Type': 'text/plain' })
+  res.end('Earn Agent Bot is running!')
+}).listen(port, () => {
+  console.log(`[server] Health check server listening on port ${port}`)
+})
