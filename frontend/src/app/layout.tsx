@@ -18,6 +18,9 @@ const spaceMono = Space_Mono({
 export const metadata: Metadata = {
   title: 'Earn Agent — AI-powered Superteam Earn matcher',
   description: 'Get matched with Superteam Earn bounties, grants and projects that fit your skills. AI drafts your application automatically.',
+  icons: {
+    icon: '/favicon.svg',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
