@@ -437,6 +437,48 @@ export default function Dashboard() {
 
         </div>
       </div>
+
+      {/* Brutalist Footer */}
+      <footer className="bg-slate-900 text-[#f4f2ed] border-t-3 border-slate-900 px-8 py-6 font-mono text-xs mt-auto">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+          <div>
+            <p className="font-black uppercase tracking-tight text-white">Earn Agent v1.0</p>
+            <p className="text-[10px] text-slate-400 mt-1 uppercase">AI-powered Superteam Earn matcher</p>
+          </div>
+          
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-[11px] font-bold">
+            <a 
+              href="https://github.com/ritesh59697" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-[#ffe600] transition-colors underline decoration-2 underline-offset-4"
+            >
+              BUILT BY RITESH
+            </a>
+            <a 
+              href="https://t.me/earnagent_bot" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-[#ffe600] transition-colors underline decoration-2 underline-offset-4"
+            >
+              TRY THE TELEGRAM BOT
+            </a>
+            <a 
+              href="https://x.com/ritesh5969" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-[#ffe600] transition-colors underline decoration-2 underline-offset-4"
+            >
+              TWITTER/X
+            </a>
+          </div>
+        </div>
+        
+        <div className="max-w-7xl mx-auto border-t border-slate-800 mt-4 pt-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-[9px] text-slate-500 font-bold uppercase tracking-wider">
+          <span>Not affiliated with Superteam.</span>
+          <span>Built for the Agentic Engineering Grant.</span>
+        </div>
+      </footer>
     </div>
   )
 }
