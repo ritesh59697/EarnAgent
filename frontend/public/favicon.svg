@@ -1,5 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
-  <!-- Background Yellow Square with Dark Border -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" width="32" height="32">
+  <!-- Solid Black Drop Shadow (offset by 3px) -->
+  <rect x="4.5" y="4.5" width="21" height="21" fill="#0f172a"/>
+  <!-- Foreground Yellow Square with Dark Border -->
   <rect x="1.5" y="1.5" width="21" height="21" fill="#ffe600" stroke="#0f172a" stroke-width="2.5"/>
   <!-- Central Lightning Bolt Icon -->
   <path d="M13 10V3L4 14h7v7l9-11h-7z" fill="#0f172a" stroke="#0f172a" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
